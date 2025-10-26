@@ -38,7 +38,7 @@ class BrainfuckInterpreter:
             elif char == '.':
                 print(chr(self.memory[self.pointer]), end='')
             elif char == ',':
-                self.memory[self.pointer] = ord(input("Введите символ: ")[0])
+                self.memory[self.pointer] = ord( input("")[0] )
             elif char == '[':
                 if self.memory[self.pointer] == 0:
                     i = self.bracket_positions[i]
